@@ -133,35 +133,35 @@ def plotItemAvg(item_name,xaxis = 'ms',label=None,span=14,plot_item=False,return
 #%% All momentary items; fluctuation and level shift analysis; check both
 
 item_names = [
-    # ('mood_relaxed'),
-    # ('mood_down'),
-    # ('mood_irritat'),
-    # ('mood_satisfi'),
-    # ('mood_lonely'),
-    # ('mood_anxious'),
-    # ('mood_enthus'),
-    # ('mood_suspic'),
-    # ('mood_cheerf'),
-    # ('mood_guilty'),
-    # ('mood_doubt'),
-    # ('mood_strong'),
-    # ('pat_restl'),
-    # ('pat_agitate'),
-    # ('pat_worry'),
-    # ('pat_concent'),
-    # ('se_selflike'),
-    # ('se_ashamed'),
-    # ('se_selfdoub'),
-    # ('se_handle'),
-    # ('phy_hungry'),
-    # ('phy_tired'),
-    # ('phy_pain'),
-    # ('phy_dizzy'),
-    # ('phy_drymouth'),
-    # ('phy_nauseous'),
-    # ('phy_headache'),
-    # ('phy_sleepy'),
-    # ('phy_physact'),
+    ('mood_relaxed'),
+    ('mood_down'),
+    ('mood_irritat'),
+    ('mood_satisfi'),
+    ('mood_lonely'),
+    ('mood_anxious'),
+    ('mood_enthus'),
+    ('mood_suspic'),
+    ('mood_cheerf'),
+    ('mood_guilty'),
+    ('mood_doubt'),
+    ('mood_strong'),
+    ('pat_restl'),
+    ('pat_agitate'),
+    ('pat_worry'),
+    ('pat_concent'),
+    ('se_selflike'),
+    ('se_ashamed'),
+    ('se_selfdoub'),
+    ('se_handle'),
+    ('phy_hungry'),
+    ('phy_tired'),
+    ('phy_pain'),
+    ('phy_dizzy'),
+    ('phy_drymouth'),
+    ('phy_nauseous'),
+    ('phy_headache'),
+    ('phy_sleepy'),
+    ('phy_physact'),
     ('evn_ordinary'),
     ('evn_niceday'),
     ('mor_qualsleep'),
@@ -180,8 +180,8 @@ for i in range(len(item_names)):
     
     results = plotItemAvg(item_names[i],span=14,plot_item=True,return_data=True)
     
-    # if results[0]==True & results[1]==True:
-    #     op_items.append(item_names[i])
+    if results[0]==True & results[1]==True:
+        op_items.append(item_names[i])
     
     print(i+1,'/',len(item_names))
     
